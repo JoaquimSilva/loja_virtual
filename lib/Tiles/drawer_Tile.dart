@@ -13,7 +13,10 @@ class DrawerTile extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.of(context).pop();
+          controller.jumpToPage(page);
+        },
         child: Container(
           height: 50.0,
           child: Row(
@@ -21,14 +24,21 @@ class DrawerTile extends StatelessWidget {
               Icon(
                 icon,
                 size: 20.0,
-                color: Theme.of(context).primaryColor,
+                color: controller.page.round() == page
+                    ? Theme.of(context).primaryColor
+                    : Colors.grey[700],
               ),
               SizedBox(
                 width: 20.0,
               ),
               Text(
                 text,
-                style: TextStyle(fontSize: 16.0, color: Colors.black),
+                style: TextStyle(
+                  fontSize: 16.0,
+                  color: controller.page.round() == page
+                      ? Theme.of(context).primaryColor
+                      : Colors.grey[700],
+                ),
               )
             ],
           ),

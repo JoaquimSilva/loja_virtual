@@ -14,7 +14,24 @@ class HomeScreen extends StatelessWidget {
         Scaffold(
           body: HomeTab(),
           drawer: CustomDrawer(_pagerController),
-        )
+        ),
+        Scaffold(
+          appBar: AppBar(
+            title: Text('Plataformas'),
+            centerTitle: true,
+          ),
+          drawer: CustomDrawer(_pagerController),
+          body: Container(),
+        ),
+        Container(
+          color: Colors.yellowAccent,
+        ),
+        Container(
+          color: Colors.yellowAccent,
+        ),
+        Container(
+          color: Colors.yellowAccent,
+        ),
       ],
     );
   }

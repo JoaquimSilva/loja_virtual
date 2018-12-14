@@ -78,7 +78,6 @@ class CustomDrawer extends StatelessWidget {
                   Icons.videogame_asset, "Plataformas", pageController, 2),
               DrawerTile(
                   Icons.playlist_add_check, "Minhas Trocas", pageController, 3),
-              //DrawerTile(Icons.c, 'Lojas'),
             ],
           )
         ],
