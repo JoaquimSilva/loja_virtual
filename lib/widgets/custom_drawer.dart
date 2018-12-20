@@ -73,11 +73,11 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Divider(),
-              DrawerTile(Icons.home, "Inicio", pageController, 1),
+              DrawerTile(Icons.home, "Inicio", pageController, 0),
               DrawerTile(
-                  Icons.videogame_asset, "Plataformas", pageController, 2),
+                  Icons.videogame_asset, "Plataformas", pageController, 1),
               DrawerTile(
-                  Icons.playlist_add_check, "Minhas Trocas", pageController, 3),
+                  Icons.playlist_add_check, "Minhas Trocas", pageController, 2),
             ],
           )
         ],

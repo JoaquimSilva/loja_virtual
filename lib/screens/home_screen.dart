@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loja_virtual/Tabs/categories_Tab.dart';
 import 'package:loja_virtual/Tabs/home_tabs.dart';
 import 'package:loja_virtual/widgets/custom_drawer.dart';
 
@@ -21,17 +22,14 @@ class HomeScreen extends StatelessWidget {
             centerTitle: true,
           ),
           drawer: CustomDrawer(_pagerController),
-          body: Container(),
+          body: CategoriesTab(),
         ),
         Container(
           color: Colors.yellowAccent,
         ),
         Container(
           color: Colors.yellowAccent,
-        ),
-        Container(
-          color: Colors.yellowAccent,
-        ),
+        )
       ],
     );
   }
