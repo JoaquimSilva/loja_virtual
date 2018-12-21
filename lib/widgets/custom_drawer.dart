@@ -53,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
                             'Olá',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18.0,
+                                fontSize: 20.0,
                                 color: Colors.blueGrey),
                           ),
                           GestureDetector(
@@ -62,7 +62,7 @@ class CustomDrawer extends StatelessWidget {
                               style: TextStyle(
                                   color: Theme.of(context).primaryColor,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 16.0),
+                                  fontSize: 24.0),
                             ),
                             onTap: () {},
                           )

@@ -25,10 +25,10 @@ class HomeScreen extends StatelessWidget {
           body: CategoriesTab(),
         ),
         Container(
-          color: Colors.yellowAccent,
+          color: Colors.grey,
         ),
         Container(
-          color: Colors.yellowAccent,
+          color: Colors.grey,
         )
       ],
     );
