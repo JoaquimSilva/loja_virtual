@@ -7,6 +7,8 @@ class ProductData {
   List imagem;
   String titulo;
   String disponivel;
+  String descricao;
+  String html;
 
   ProductData.fromDocument(DocumentSnapshot snapshot) {
     id = snapshot.documentID;
@@ -14,5 +16,7 @@ class ProductData {
     titulo = snapshot.data['titulo'];
     disponivel = snapshot.data['disponivel'];
     imagem = snapshot.data['imagem'];
+    descricao = snapshot.data['descricao'];
+    html = snapshot.data['html'];
   }
 }
